@@ -1,0 +1,39 @@
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Для сетки на флоатах
+@mixin clearfix {
+	$::after {
+		content: " ";
+
+		display: table;
+		clear: both;
+	}
+}
+
+
+// Адаптивный центровщик
+@mixin container {
+	width: 320px;
+	margin: 0 auto;
+}
+
+
+// Убирает обводку
+@mixin no-outline {
+	outline: none;
+	background: transparent;
+
+	&::before {
+		display: none;
+	}
+}
