@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 28px;
+    font-family: $ff-main;
+    font-size: 0.9rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: 0.3s;
+  }
+  &__link:first-child {
+    padding-left: 0;
+  }
+  &__link:last-child {
+    padding-right: 0;
+  }
+
+  &__link:hover {
+    color: darken(#ffffff, 30%);
+  }
+  &__link:active {
+    color: #e74c3c;
+  }
+  &__link--active {
+    color: #e74c3c;
+  }
+}
+
+//Подчеркивание активной ссылки
+.nav__link--active {
+  position: relative;
+}
+.nav__link--active::after { /*псевдоэлемент*/
+  content: " "; /*обязательно*/
+  position: absolute; /*строчному элементу задали "position: absolute" и он становится блочным*/
+
+  /*привязка к родителю:*/
+  right: 28px;
+  bottom: -20px;
+  left: 0px;
+
+  height: 1px;
+  background-color: #e74c3c;
+}

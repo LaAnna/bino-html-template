@@ -1,0 +1,28 @@
+body {
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
+//Свойства width и height включают в себя значения полей и границ, но не отступов (margin)
+html {
+  box-sizing: border-box;
+}
+
+
+//отменяем маркеры для списка
+ul,
+ol {
+  list-style-type: none;
+}
+
+//для float
+.clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

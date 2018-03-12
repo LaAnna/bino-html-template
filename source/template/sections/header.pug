@@ -1,0 +1,10 @@
+header.header
+    .container
+        .logo: img.logo__picture(src="images/logo.png" width="141px" height="52px" alt="picture")
+        nav.nav
+            - var items = ['Home', 'About us', 'Portfolio', 'Pricing', 'Team', 'Blog', 'Contact']
+                each item in items
+                    if item === 'Home'
+                        a.nav__link.nav__link--active(href="#")=item
+                    else
+                        a.nav__link(href="#")=item

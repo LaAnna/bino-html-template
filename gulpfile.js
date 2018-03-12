@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const spritesmith = require('gulp.spritesmith');
 
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
@@ -11,6 +12,7 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 let cleanCSS = require('gulp-clean-css');
+const pug = require('gulp-pug');
 
 
 const config = {
@@ -32,6 +34,15 @@ gulp.task('server', function() {
   gulp.watch('build/**/*').on('change', browserSync.reload);
 });
 
+/* -------- Pug compile  -------- */
+gulp.task('templates:compile', function buildHTML() {
+    return gulp.src('source/template/index.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('build'))
+});
+
 /* ------------ Styles compile ------------- */
 gulp.task('styles:compile', function() {
  return gulp.src('source/styles/main.scss')
@@ -42,6 +53,19 @@ gulp.task('styles:compile', function() {
    .pipe(sourcemaps.write('.'))
    .pipe(rename('main.min.css'))
    .pipe(gulp.dest('build/css'));
+});
+
+/* --------  Sprite -------- */
+gulp.task('sprite', function (cb) {
+    const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        imgPath: '../images/sprite.png',
+        cssName: 'sprite.scss'
+    }));
+
+    spriteData.img.pipe(gulp.dest('build/images/'));
+    spriteData.css.pipe(gulp.dest('source/styles/global'));
+    cb();
 });
 
 /* --------  js -------- */
@@ -73,7 +97,7 @@ gulp.task('copy:fonts', function() {
 
 /* ------------ Copy images ------------- */
 gulp.task('copy:images', function() {
-  return gulp.src('./source/img/**/*.*').pipe(gulp.dest('build/img'));
+  return gulp.src('./source/images/**/*.*').pipe(gulp.dest('build/images'));
 });
 
 /* ------------ Copy ------------- */
@@ -85,15 +109,15 @@ gulp.task('copy', gulp.parallel(
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {
-  gulp.watch('source/*.html', gulp.series('copy:html'));
   gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
   gulp.watch('source/js/**/*.js', gulp.series('js'));
+  gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
 });
 
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('js','copy'),
-  gulp.parallel('watch', 'server'),
-  ),
+  gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'js','copy'),
+  gulp.parallel('watch', 'server')
+  )
 );
 

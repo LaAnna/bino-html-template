@@ -1,21 +1,34 @@
 {
-  "name": "project",
+  "name": "bino-html-template",
   "version": "0.0.0",
-  "description": "project description",
+  "description": "Bino HTML template",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "ggg": "gulp templates:compile"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaAnna/bino-html-template.git"
+  },
+  "author": "Anna Lahtacheva",
+  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.9.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }
