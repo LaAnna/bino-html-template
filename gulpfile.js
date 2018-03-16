@@ -11,7 +11,7 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-let cleanCSS = require('gulp-clean-css');
+const cleanCSS = require('gulp-clean-css');
 const pug = require('gulp-pug');
 
 

@@ -1,19 +1,15 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
 
   &__link {
-    display: inline-block;
+    display: table-cell;
     vertical-align: top;
-    padding: 0 28px;
     font-family: $ff-main;
-    font-size: 0.9rem;
-
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    padding: 0 1.7rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $against-a-dark-background;
     transform: 0.3s;
   }
   &__link:first-child {
@@ -24,13 +20,13 @@
   }
 
   &__link:hover {
-    color: darken(#ffffff, 30%);
+    color: darken($against-a-dark-background, 30%);
   }
   &__link:active {
-    color: #e74c3c;
+    color: $active-color;
   }
   &__link--active {
-    color: #e74c3c;
+    color: $active-color;
   }
 }
 
@@ -38,9 +34,9 @@
 .nav__link--active {
   position: relative;
 }
-.nav__link--active::after { /*псевдоэлемент*/
-  content: " "; /*обязательно*/
-  position: absolute; /*строчному элементу задали "position: absolute" и он становится блочным*/
+.nav__link--active::after {
+  content: " ";
+  position: absolute;
 
   /*привязка к родителю:*/
   right: 28px;
@@ -48,5 +44,5 @@
   left: 0px;
 
   height: 1px;
-  background-color: #e74c3c;
+  background-color: $active-color;
 }

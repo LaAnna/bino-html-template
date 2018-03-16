@@ -1,0 +1,58 @@
+.hero {
+  width: 100%;
+  min-height: 53.5rem;
+  color: $against-a-dark-background;
+
+  font-family: $ff-main;
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 53.5rem;
+  }
+
+
+  &__slogan {
+    width: 80%;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-family: $ff-additional;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    font-weight: lighter;
+  }
+  &__title {
+    width: 80%;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    letter-spacing: 0.1em;
+    padding-bottom: 2rem;
+  }
+  &__about {
+    width: 80%;
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    max-width: 600px;
+
+    color: $light-fonts-and-background;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  &__buttons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  &__button {
+    @include button();
+    margin: 1rem 1rem;
+  }
+}
