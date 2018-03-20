@@ -1,0 +1,75 @@
+@mixin circle(
+  $size: 60px,
+  $bg: $against-a-dark-background
+) {
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  background: $bg;
+  border: 0.3rem solid rgba(153, 153, 153, 0.5);
+  position: relative;
+}
+
+@mixin circle-icon(
+  $icon: ''
+){
+  @include circle();
+  &::after {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    background: url('../images/icons/#{$icon}.svg') 27px 22px no-repeat;
+    background-position: center;
+  }
+}
+
+.services {
+  &__icon {
+    @include centerer-x();
+    width: 60px;
+    height: 60px;
+    background: $against-a-dark-background;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 5px;
+      left: 5px;
+      background: url("../images/icons/ico-screen.svg") 100% 100% no-repeat;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: -5px;
+      left: -5px;
+      background-color: rgba(153, 153, 153, 0.5);
+      -moz-border-radius: 35px;
+      -webkit-border-radius: 35px;
+      border-radius: 35px;
+    }
+
+  }
+  &__icon-screen {
+    @include circle-icon(ico-screen);
+  }
+  &__icon-pages {
+    @include circle-icon(ico-pages);
+  }
+  &__icon-photo {
+    @include circle-icon(ico-photo);
+  }
+
+}

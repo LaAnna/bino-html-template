@@ -52,7 +52,7 @@
     align-content: center;
   }
   &__button {
-    @include button();
+    @include button_against-a-dark-background();
     margin: 1rem 1rem;
   }
 }

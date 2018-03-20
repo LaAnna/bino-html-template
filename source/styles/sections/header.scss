@@ -1,6 +1,13 @@
 .header {
-  background: $dark-background url("../images/background_header.jpg") no-repeat center;
-  background-size: cover;
+  position: relative;
+  background-image: url("../images/background_header.jpg");
+  background-size: auto,1920px 1041px;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/background_figure.svg");
+    background-size: auto,1920px 1041px;
+  }
   &__background {
     top: 0;
     left: 0;
@@ -17,8 +24,9 @@
     align-items: center;
     padding: 40px 0;
   }
+
+  &__logo {
+    flex: 1 1 auto;
+  }
 }
 
-.logo {
-  flex: 1 1 auto;
-}

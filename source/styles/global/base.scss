@@ -1,13 +1,18 @@
+//Свойства width и height включают в себя значения полей и границ, но не отступов (margin)
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   font-family: $ff-main;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-
-//Свойства width и height включают в себя значения полей и границ, но не отступов (margin)
-html {
-  box-sizing: border-box;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 

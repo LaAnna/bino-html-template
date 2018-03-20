@@ -1,4 +1,4 @@
-@mixin button(
+@mixin button_against-a-dark-background(
   $display: inline-block,
   $width: 225px,
   $padding: 15px 0,
@@ -30,5 +30,41 @@
   &:hover, &:active, &--active {
     background: $active-color;
     border: 1px solid $active-color;
+  }
+}
+
+
+@mixin button-against-a-white-background(
+  $display: inline-block,
+  $padding: 15px 30px,
+  $background: $active-color,
+  $color: $against-a-dark-background,
+  $border: 1px solid $active-color,
+  $border-radius: 2px,
+  $box-shadow:1px 1px 10px 0px rgba(0,0,0,0.51),
+  $font-family: $ff-main,
+  $font-size: 0.9rem,
+  $text-decoration: none,
+  $text-transform: uppercase,
+  $text-align: center,
+  $transition: 0.3s
+){
+  display: $display;
+  padding: $padding;
+  background: $background;
+  color: $color;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-family: $font-family;
+  font-size: $font-size;
+  text-decoration: $text-decoration;
+  text-transform: $text-transform;
+  text-align: $text-align;
+  transition: $transition;
+
+  &:hover, &:active, &--active {
+    background: $light-fonts-and-background;
+    border: 1px solid $light-fonts-and-background;
   }
 }

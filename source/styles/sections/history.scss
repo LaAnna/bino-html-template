@@ -1,0 +1,39 @@
+.history {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 9rem 0;
+  }
+
+  &__picture {
+    padding-right: 2.5rem;
+  }
+
+  &__text-wrapper {
+    padding-left: 2.5rem;
+    flex-basis: 48%;
+  }
+
+  &__title {
+    text-align: left;
+    padding-left: 2.19rem;
+    border-left: 6px solid $active-color;
+    line-height: 2.25rem;
+  }
+
+  &__about {
+    margin: 3.125rem 0;
+    font-size: 0.875rem;
+    font-family: $ff-additional;
+    color: $light-fonts-and-background;
+    letter-spacing: 0.1em;
+  }
+
+  &__button {
+    @include button-against-a-white-background();
+  }
+}
