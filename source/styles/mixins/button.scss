@@ -41,7 +41,7 @@
   $color: $against-a-dark-background,
   $border: 1px solid $active-color,
   $border-radius: 2px,
-  $box-shadow:1px 1px 10px 0px rgba(0,0,0,0.51),
+  $box-shadow:1px 1px 10px 0px $transparent-shadow,
   $font-family: $ff-main,
   $font-size: 0.9rem,
   $text-decoration: none,

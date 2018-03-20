@@ -7,13 +7,14 @@ $white: #ffffff;
 $dark-grey: #202020;
 $grey: #6a6a6a;
 $light-grey: #999999;
-
+$transparent-grey: rgba(153, 153, 153, 0.5);
 $red: #e74c3c;
 
 $against-a-dark-background: $white;
 $dark-background: $dark-grey;
 $main-fonts-color: $grey;
 $light-fonts-and-background: $light-grey;
+$transparent-shadow: $transparent-grey;
 $active-color: $red;
 
 

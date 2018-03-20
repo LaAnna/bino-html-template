@@ -55,9 +55,40 @@
   }
 
   &__picture {
-    width: 50%;
-    background: url("../images/image_1.jpg") no-repeat;
-    background-size: 100%;
+    //width: 50%;
+    background: url("../images/image_1.jpg") 879px 768px no-repeat;
+    background-position: center;
+  }
+
+
+//Circle with icon
+  &__icon {
+    @include centerer-x();
+    width: 60px;
+    height: 60px;
+    background: $against-a-dark-background;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 5px;
+      left: 5px;
+      background: url("../images/icons/ico-screen.svg") 100% 100% no-repeat;
+    }
+  }
+  &__icon-screen {
+    @include circle-icon(ico-screen, 27px, 22px);
+  }
+  &__icon-pages {
+    @include circle-icon(ico-pages, 31px, 26px);
+  }
+  &__icon-photo {
+    @include circle-icon(ico-photo, 25px, 22px);
   }
 }
 
