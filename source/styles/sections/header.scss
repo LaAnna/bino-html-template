@@ -1,7 +1,7 @@
 .header {
   position: relative;
   background-image: url("../images/background_header.jpg");
-  background-size: auto,1920px 1041px;
+  background-size: cover,1920px 1041px;
   &::after {
     content: '';
     position: absolute;

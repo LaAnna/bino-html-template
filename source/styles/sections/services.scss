@@ -1,18 +1,37 @@
 .services {
   background: $dark-background;
+  position: relative;
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    padding: 0;
+  &__picture {
+    @include centerer-y();
+    width: 879px;
+    height: 768px;
+    left: 50%;
+    background: url("../images/image_1.jpg");
   }
 
-  &__wrapper-text {
-    width: 50%;
-    margin-right: 80px;
+  &__wrapper {
+    padding-right: 48.7%;
+    min-height: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+  }
+
+  &__wrapper-centerer {
+    margin: auto 0;
+  }
+
+  &__wrapper-title {
+    padding-right: 112px;
+  }
+
+  &__list {
+    padding: 0 15px;
+    text-align: right;
   }
 
   &__title {
@@ -21,20 +40,24 @@
     border-right: 6px solid $active-color;
     line-height: 2.25rem;
     text-align: right;
-    margin: 156px 0 50px 150px;
+    margin: 140px 0 50px 150px;
   }
+
   &__item {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    text-align: right;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
   }
 
   &__wrapper-item {
-    max-width: 490px;
-
+    padding-right: 100px;
   }
 
   &__header {
@@ -54,33 +77,9 @@
     letter-spacing: 0.1em;
   }
 
-  &__picture {
-    //width: 50%;
-    background: url("../images/image_1.jpg") 879px 768px no-repeat;
-    background-position: center;
-  }
 
+  //Circle with icon
 
-//Circle with icon
-  &__icon {
-    @include centerer-x();
-    width: 60px;
-    height: 60px;
-    background: $against-a-dark-background;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 5px;
-      left: 5px;
-      background: url("../images/icons/ico-screen.svg") 100% 100% no-repeat;
-    }
-  }
   &__icon-screen {
     @include circle-icon(ico-screen, 27px, 22px);
   }
@@ -93,14 +92,8 @@
 }
 
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-  .services {
-    &__picture {
-      @include visuallyhidden;
-    }
-  }
-}
+
+
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
@@ -108,5 +101,80 @@
     &__picture {
       @include visuallyhidden;
     }
+
+    &__wrapper {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &__wrapper-title {
+      padding-right: 0;
+    }
+
+    &__list {
+      padding: 0;
+    }
+
+    &__title {
+      text-align: center;
+      margin: 140px 0 50px 0;
+      padding-right: 0;
+    }
+
+    &__icon {
+      position: unset;
+
+
+    }
+
+    &__wrapper-item {
+      padding-right: 0;
+    }
+
+    &__header {
+      text-align: center;
+    }
+
+    &__about {
+      text-align: center;
+    }
   }
 }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .services {
+    &__picture {
+      @include visuallyhidden;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__item {
+
+    }
+
+    &__wrapper-item {
+
+    }
+
+    &__header {
+      text-align: center;
+    }
+
+    &__about {
+      text-align: center;
+    }
+
+    //Circle with icon
+    //&__icon {
+    //  position: relative;
+    //  text-align: center;
+    //}
+  }
+}
+
+
+

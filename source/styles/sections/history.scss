@@ -37,3 +37,32 @@
     @include button-against-a-white-background();
   }
 }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .history {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      padding: 120px 0 50px 0;
+    }
+
+    &__picture {
+      padding-right: 0;
+    }
+
+    &__text-wrapper {
+      padding: 50px 15px 15px 15px;
+      flex-basis: 100%;
+      text-align: center;
+    }
+
+    &__title {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
