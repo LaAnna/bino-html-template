@@ -1,0 +1,10 @@
+.works {
+  &__about {
+    font-family: $ff-main;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-bottom: 30px;
+    color: $light-fonts-and-background;
+  }
+}

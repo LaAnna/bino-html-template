@@ -17,4 +17,16 @@ $light-fonts-and-background: $light-grey;
 $transparent-shadow: $transparent-grey;
 $active-color: $red;
 
+// Breadcrumbs
+$breadcrumb-padding-y:              0.75rem !default;
+$breadcrumb-padding-x:              1rem !default;
+$breadcrumb-item-padding:           0.5rem !default;
+
+$breadcrumb-margin-bottom:          1rem !default;
+
+$breadcrumb-divider-color:          $light-fonts-and-background !default;
+$breadcrumb-active-color:           $active-color !default;
+$breadcrumb-divider:                "/" !default;
+
+
 
