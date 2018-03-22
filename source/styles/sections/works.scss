@@ -4,7 +4,52 @@
     font-size: 0.9rem;
     letter-spacing: 0.1em;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: $light-fonts-and-background;
   }
+
+  &__line-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+
+    &__bottom-line {
+      display: inline-block;
+      text-align: center;
+      &:after {
+        background: $main-fonts-color;
+      }
+      &:before {
+        background: $main-fonts-color;
+      }
+    }
+  }
+
+  &__picture-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+
+    &__picture {
+      display: table-cell;
+      flex-basis: 292.5px;
+      margin: 0;
+      padding: 0;
+
+      .picture__img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+
 }
