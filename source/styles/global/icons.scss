@@ -1,0 +1,59 @@
+.icon {
+  margin: auto;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background: transparent;
+  border: 1px solid $light-fonts-and-background;
+  transition: all 0.3s;
+}
+
+.icon-design {
+  content: '';
+  @include centerer-xy();
+  height: 24px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-glasses.svg) 60px 24px no-repeat;
+  background-position: center;
+}
+
+.icon-code {
+  content: '';
+  @include centerer-xy();
+  height: 19px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-heart.svg) 52.003px 48.3px no-repeat;
+  background-position: center;
+}
+
+.icon-ideas {
+  content: '';
+  @include centerer-xy();
+  height: 21px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-bulb-red.svg) 360.621px 512.304px no-repeat;
+  background-position: center;
+}
+
+.icon-support {
+  content: '';
+  @include centerer-xy();
+  height: 22px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-speech-bubbles.svg) 393.1px 306.8px no-repeat;
+  background-position: center;
+}
+
+.icon-creative-ideas {
+  content: '';
+  @include centerer-xy();
+  height: 21px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-bulb-white.svg) 360.621px 512.304px no-repeat;
+  background-position: center;
+}

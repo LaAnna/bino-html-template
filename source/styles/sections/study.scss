@@ -1,0 +1,69 @@
+.study {
+  background-color: $light-background;
+  min-height: 1190px;
+
+  &__title{
+    padding-top: 145px;
+  }
+
+  &__about {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    font-family: $ff-main;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $light-fonts-and-background;
+  }
+
+  &__line-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+
+    &__bottom-line {
+      display: inline-block;
+      text-align: center;
+      &:after {
+        background: $main-fonts-color;
+      }
+      &:before {
+        background: $main-fonts-color;
+      }
+    }
+  }
+
+  &__wrapper {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 365px;
+    min-height: 629px;
+    width: 663px;
+    background-color: $against-a-dark-background;
+    background-position: center;
+    text-align: center;
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    margin: 80px 0 50px 0;
+  }
+
+  &__icon {
+    background-color: $active-color;
+    border-color: $active-color;
+    transform: rotate(45deg);
+  }
+
+  &__button {
+    @include button-against-a-white-background();
+  }
+}
+
