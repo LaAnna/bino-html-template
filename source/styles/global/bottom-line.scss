@@ -1,32 +1,32 @@
 .bottom-line {
   position: relative;
-  width: 7px;
-  height: 7px;
+  width: 5.25px;
+  height: 5.25px;
   background: $active-color;
-  -moz-border-radius: 3.5px;
-  -webkit-border-radius: 3.5px;
-  border-radius: 3.5px;
+  -moz-border-radius: 2.625px;
+  -webkit-border-radius: 2.625px;
+  border-radius: 2.625px;
 
   &:after {
     position: absolute;
-    top: 3.5px;
+    top: 2.625px;
     left: 50%;
     transform: translateX(-123%);
     content: '';
     bottom: 0px;
-    width: 80px;
+    width: 60px;
     height: 1px;
     background: $against-a-dark-background;
   }
 
   &:before {
     position: absolute;
-    top: 3.5px;
+    top: 2.625px;
     right: 50%;
     transform: translateX(123%);
     content: '';
     bottom: 0px;
-    width: 80px;
+    width: 60px;
     height: 1px;
     background: $against-a-dark-background;
   }

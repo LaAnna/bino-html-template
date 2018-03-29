@@ -1,20 +1,20 @@
 .study {
   background-color: $light-background;
-  min-height: 1190px;
+  min-height: 55rem;
 
   &__title{
-    padding-top: 145px;
+    padding-top: 5rem;
   }
 
   &__about {
     display: block;
     width: 80%;
-    margin: 1rem auto;
+    margin: 0.75rem auto;
     font-family: $ff-main;
-    font-size: 0.9rem;
+    font-size: 0.675rem;
     letter-spacing: 0.1em;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     color: $light-fonts-and-background;
   }
 
@@ -39,27 +39,42 @@
     }
   }
 
-  &__wrapper {
+  &__img {
     content: '';
     position: absolute;
-    left: 0;
-    top: 365px;
-    min-height: 629px;
-    width: 663px;
+    right: 2.5rem;
+    top: 220px;
+    min-height: 541.5px;
+    width: 438.75px;
     background-color: $against-a-dark-background;
     background-position: center;
     text-align: center;
   }
 
+  &__wrapper {
+    content: '';
+    position: absolute;
+    left: 2.5rem;
+    top: 255px;
+    min-height: 471.75px;
+    width: 497.25px;
+    background-color: $against-a-dark-background;
+    background-position: center;
+    text-align: center;
+    z-index: 1;
+  }
+
   &__icon-wrapper {
     position: relative;
-    margin: 80px 0 50px 0;
+    margin: 70px 0 50px 0;
   }
 
   &__icon {
     background-color: $active-color;
     border-color: $active-color;
     transform: rotate(45deg);
+    width: 4rem;
+    height: 4rem;
   }
 
   &__button {

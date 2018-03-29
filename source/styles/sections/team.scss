@@ -1,0 +1,133 @@
+.team {
+  position: relative;
+  width: 100%;
+  color: $against-a-dark-background;
+  background-color: $main-fonts-color;
+  background-image: url("../images/background_team.jpg");
+  background-size: cover,1440px 558px;
+
+  font-family: $ff-main;
+  text-align: center;
+
+  &__curve {
+    @include centerer-xy();
+    top: 48%;
+    content: '';
+    width: 1440px;
+    height: 382.9px;
+    background: url("../images/line.svg") 1922px 511px no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &__shape {
+    @include centerer-xy();
+    top: 56.5%;
+    content: '';
+    width: 1440px;
+    height: 486.267px;
+    background: url("../images/shape.svg") 1440px 486.267px no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+
+  &__title {
+    padding-top: 6.3rem;
+    color: $against-a-dark-background;
+  }
+
+  &__about {
+    display: block;
+    width: 80%;
+    margin: 0.5rem auto;
+    font-family: $ff-main;
+    font-size: 0.675rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: $against-a-dark-background;
+  }
+
+  &__bottom-line {
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    padding-bottom: 22.5rem;
+    position: relative;
+  }
+
+  &__employee {
+    position: absolute;
+    width: 40.5px;
+    height: 40.5px;
+    background-color: transparent;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 0.14rem solid $active-color;
+
+    &__header {
+      position: absolute;
+      content: '';
+      left: -120%;
+      color: $active-color;
+      font-size: 1.125rem;
+      font-weight: normal;
+      padding-top: 7rem;
+      margin: 0;
+      min-width: 8.9rem;
+      text-align: center;
+    }
+
+    &__about {
+      position: absolute;
+      content: '';
+      left: -120%;
+      min-width: 8.9rem;
+      margin: 0;
+      padding-top: 9rem;
+      font-family: $ff-main;
+      font-size: 0.675rem;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: $against-a-dark-background;
+    }
+  }
+}
+
+.manager-one {
+  background: url("../images/foto_1.png") 42.75px 42px no-repeat;
+  background-position: center;
+  left: 4%;
+  top: 38%;
+}
+
+.manager-two {
+  background: url("../images/foto_2.png") 66px 64.5px no-repeat;
+  background-position: center;
+  left: 27%;
+  top: 27%;
+}
+
+.manager-three {
+  background: url("../images/foto_3.png") 42.75px 42px no-repeat;
+  background-position: center;
+  left: 48%;
+  top: 27%;
+}
+
+.manager-four {
+  background: url("../images/foto_4.png") 42.75px 42px no-repeat;
+  background-position: center;
+  left: 69%;
+  top: 35%;
+}
+
+.manager-five {
+  background: url("../images/foto_5.png") 42.75px 42px no-repeat;
+  background-position: center;
+  top: 25%;
+  right: 4%;
+}

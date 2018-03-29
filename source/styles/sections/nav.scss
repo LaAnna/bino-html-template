@@ -4,13 +4,13 @@
     display: table-cell;
     vertical-align: top;
     font-family: $ff-main;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     letter-spacing: 0.1em;
-    padding: 0 1.7rem;
+    padding: 0 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     color: $against-a-dark-background;
-    transform: 0.3s;
+    //transform: 0.3s;
   }
   &__link:first-child {
     padding-left: 0;
@@ -39,8 +39,8 @@
   position: absolute;
 
   /*привязка к родителю:*/
-  right: 28px;
-  bottom: -20px;
+  right: 1.3125rem;
+  bottom: -0.9375rem;
   left: 0px;
 
   height: 1px;

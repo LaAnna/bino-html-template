@@ -1,9 +1,22 @@
 .icon {
   margin: auto;
   display: inline-block;
-  width: 72px;
-  height: 72px;
+  width: 3.375rem;
+  height: 3.375rem;
   background: transparent;
+  border: 1px solid $light-fonts-and-background;
+  transition: all 0.3s;
+}
+
+.icon-circle {
+  margin: auto;
+  display: inline-block;
+  width: 5.16rem;
+  height: 5.16rem;
+  background: transparent;
+  -moz-border-radius: 2.58rem;
+  -webkit-border-radius: 2.58rem;
+  border-radius: 2.58rem;
   border: 1px solid $light-fonts-and-background;
   transition: all 0.3s;
 }
@@ -11,49 +24,99 @@
 .icon-design {
   content: '';
   @include centerer-xy();
-  height: 24px;
-  width: 60px;
+  height: 1.4rem;
+  width: 2.8rem;
   transform: translate(-50%, -50%);
-  background: url(../images/icons/ico-glasses.svg) 60px 24px no-repeat;
+  background: url(../images/icons/ico-glasses.svg) 2.37rem 1.125rem no-repeat;
   background-position: center;
 }
 
 .icon-code {
   content: '';
   @include centerer-xy();
-  height: 19px;
-  width: 60px;
+  height: 0.89rem;
+  width: 2.8rem;
   transform: translate(-50%, -50%);
-  background: url(../images/icons/ico-heart.svg) 52.003px 48.3px no-repeat;
+  background: url(../images/icons/ico-heart.svg) 3.25rem 3.02rem no-repeat;
   background-position: center;
 }
 
 .icon-ideas {
   content: '';
   @include centerer-xy();
-  height: 21px;
-  width: 60px;
+  height: 1.2rem;
+  width: 2.8rem;
   transform: translate(-50%, -50%);
-  background: url(../images/icons/ico-bulb-red.svg) 360.621px 512.304px no-repeat;
+  background: url(../images/icons/ico-bulb-red.svg) 22.54rem 32.02rem no-repeat;
   background-position: center;
 }
 
 .icon-support {
   content: '';
   @include centerer-xy();
-  height: 22px;
-  width: 60px;
+  height: 1.03rem;
+  width: 2.8rem;
   transform: translate(-50%, -50%);
-  background: url(../images/icons/ico-speech-bubbles.svg) 393.1px 306.8px no-repeat;
+  background: url(../images/icons/ico-speech-bubbles.svg) 24.57rem 19.175rem no-repeat;
   background-position: center;
 }
 
 .icon-creative-ideas {
   content: '';
   @include centerer-xy();
-  height: 21px;
-  width: 60px;
+  height: 1.7rem;
+  width: 2.8rem;
   transform: translate(-50%, -50%);
-  background: url(../images/icons/ico-bulb-white.svg) 360.621px 512.304px no-repeat;
+  background: url(../images/icons/ico-bulb-white.svg) 22.54rem 32.02rem no-repeat;
+  background-position: center;
+}
+
+.icon-heart {
+  content: '';
+  @include centerer-xy();
+  height: 1.22rem;
+  width: 2.8rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-heart-white.svg) 3.25rem 3.02rem no-repeat;
+  background-position: center;
+}
+
+.icon-ticket {
+  content: '';
+  @include centerer-xy();
+  height: 1.36rem;
+  width: 2.8rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-ticket-white.svg) 29.8rem 29.9rem no-repeat;
+  background-position: center;
+}
+
+.icon-like {
+  content: '';
+  @include centerer-xy();
+  height: 1.5rem;
+  width: 2.8rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-like-white.svg) 30.1rem 30.88rem no-repeat;
+  background-position: center;
+}
+
+.icon-star {
+  content: '';
+  @include centerer-xy();
+  height: 1.36rem;
+  width: 2.8rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-star-white.svg) 3.12rem 2.99rem no-repeat;
+  background-position: center;
+}
+
+.icon-ribbons {
+  content: '';
+  @include centerer-xy();
+  height: 1.31rem;
+  width: 2.8rem;
+  transform: translate(-50%, -50%);
+  background: url(../images/icons/ico-ribbons-white.svg) 23.94rem 31.94rem no-repeat;
   background-position: center;
 }

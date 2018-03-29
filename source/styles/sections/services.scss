@@ -4,15 +4,15 @@
 
   &__picture {
     @include centerer-y();
-    width: 879px;
-    height: 768px;
+    width: 41.2rem;
+    height: 36rem;
     left: 50%;
     background: url("../images/image_1.jpg");
   }
 
   &__wrapper {
     padding-right: 48.7%;
-    min-height: 768px;
+    min-height: 36rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,21 +26,21 @@
   }
 
   &__wrapper-title {
-    padding-right: 112px;
+    padding-right: 5.25rem;
   }
 
   &__list {
-    padding: 0 15px;
+    padding: 0 0.7rem;
     text-align: right;
   }
 
   &__title {
     color: $against-a-dark-background;
-    padding-right: 2.19rem;
+    padding-right: 1.64rem;
     border-right: 6px solid $active-color;
-    line-height: 2.25rem;
+    line-height: 1.69rem;
     text-align: right;
-    margin: 140px 0 50px 150px;
+    margin: 6.56rem 0 2.34rem 7rem;
   }
 
   &__item {
@@ -49,20 +49,20 @@
 
   &__icon {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 3.3rem;
+    height: 3.3rem;
     left: 100%;
     transform: translate(-50%, -50%);
     top: 50%;
   }
 
   &__wrapper-item {
-    padding-right: 100px;
+    padding-right: 4.7rem;
   }
 
   &__header {
-    margin: 0 0 1rem 0;
-    font-size: 1.125rem;
+    margin: 0 0 0.75rem 0;
+    font-size: 0.84rem;
     font-family: $ff-main;
     color: $active-color;
     text-transform: uppercase;
@@ -70,8 +70,8 @@
   }
 
   &__about {
-    margin: 1rem 0 3.75rem;
-    font-size: 0.875rem;
+    margin: 0.75rem 0 2.8rem;
+    font-size: 0.66rem;
     font-family: $ff-additional;
     color: $light-fonts-and-background;
     letter-spacing: 0.1em;
@@ -81,13 +81,13 @@
   //Circle with icon
 
   &__icon-screen {
-    @include circle-icon(ico-screen, 27px, 22px);
+    @include circle-icon(ico-screen, 1.3rem, 1.03rem);
   }
   &__icon-pages {
-    @include circle-icon(ico-pages, 31px, 26px);
+    @include circle-icon(ico-pages, 1.45rem, 1.22rem);
   }
   &__icon-photo {
-    @include circle-icon(ico-photo, 25px, 22px);
+    @include circle-icon(ico-photo, 1.17rem, 1.03rem);
   }
 }
 
@@ -103,8 +103,8 @@
     }
 
     &__wrapper {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
     }
 
     &__wrapper-title {
@@ -117,7 +117,7 @@
 
     &__title {
       text-align: center;
-      margin: 140px 0 50px 0;
+      margin: 6.6rem 0 2.34rem 0;
       padding-right: 0;
     }
 

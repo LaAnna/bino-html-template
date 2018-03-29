@@ -1,19 +1,19 @@
 @mixin circle(
-  $size: 60px,
+  $size: 2.8rem,
   $bg: $against-a-dark-background
 ) {
   height: $size;
   width: $size;
   border-radius: 50%;
   background: $bg;
-  border: 0.3rem solid $transparent-shadow;
+  border: 0.23rem solid $transparent-shadow;
   position: relative;
 }
 
 @mixin circle-icon(
   $icon: '',
-  $width: 27px,
-  $height: 22px
+  $width: 1.27rem,
+  $height: 1.03rem
 ) {
   @include circle();
   &::after {
@@ -28,6 +28,8 @@
     margin: 0;
     background: url('../images/icons/#{$icon}.svg') $width $height no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
+
 

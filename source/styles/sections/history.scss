@@ -6,28 +6,28 @@
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: flex-start;
-    padding: 9rem 0;
+    padding: 6rem 0;
   }
 
   &__picture {
-    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
 
   &__text-wrapper {
-    padding-left: 2.5rem;
-    flex-basis: 48%;
+    padding-left: 1.875rem;
+    flex-basis: 50%;
   }
 
   &__title {
     text-align: left;
-    padding-left: 2.19rem;
+    padding-left: 1.64rem;
     border-left: 6px solid $active-color;
-    line-height: 2.25rem;
+    line-height: 1.69rem;
   }
 
   &__about {
-    margin: 3.125rem 0;
-    font-size: 0.875rem;
+    margin: 2.34rem 0;
+    font-size: 0.66rem;
     font-family: $ff-additional;
     color: $light-fonts-and-background;
     letter-spacing: 0.1em;
@@ -35,6 +35,8 @@
 
   &__button {
     @include button-against-a-white-background();
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
   }
 }
 
@@ -47,7 +49,7 @@
       flex-wrap: wrap;
       align-content: center;
       align-items: center;
-      padding: 120px 0 50px 0;
+      padding: 5.625rem 0 2.34rem 0;
     }
 
     &__picture {
@@ -55,7 +57,7 @@
     }
 
     &__text-wrapper {
-      padding: 50px 15px 15px 15px;
+      padding: 2.34rem 0.7rem 0.7rem 0.7rem;
       flex-basis: 100%;
       text-align: center;
     }
