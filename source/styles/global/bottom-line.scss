@@ -1,15 +1,15 @@
 .bottom-line {
   position: relative;
-  width: 5.25px;
-  height: 5.25px;
+  width: 5px;
+  height: 5px;
   background: $active-color;
-  -moz-border-radius: 2.625px;
-  -webkit-border-radius: 2.625px;
-  border-radius: 2.625px;
+  -moz-border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
 
   &:after {
     position: absolute;
-    top: 2.625px;
+    top: 2.5px;
     left: 50%;
     transform: translateX(-123%);
     content: '';
@@ -21,7 +21,7 @@
 
   &:before {
     position: absolute;
-    top: 2.625px;
+    top: 2.5px;
     right: 50%;
     transform: translateX(123%);
     content: '';

@@ -41,7 +41,7 @@
   $color: $against-a-dark-background,
   $border: 1px solid $active-color,
   $border-radius: 2px,
-  $box-shadow:1px 1px 10px 0px $transparent-shadow,
+  $box-shadow: -1px 1px 10px 1px $transparent-shadow,
   $font-family: $ff-main,
   $font-size: 0.675rem,
   $text-decoration: none,
@@ -64,8 +64,8 @@
   transition: $transition;
 
   &:hover, &:active, &--active {
-    background: $light-fonts-and-background;
-    border: 1px solid $light-fonts-and-background;
+    background: darken($active-color, 15%);
+    border: 1px solid darken($active-color, 15%);
   }
 }
 
@@ -76,7 +76,7 @@
   $color: $against-a-dark-background,
   $border: 1px solid $main-fonts-color,
   $border-radius: 2px,
-  $box-shadow:1px 1px 10px 0px $transparent-shadow,
+  $box-shadow: -1px 1px 10px 1px $transparent-shadow,
   $font-family: $ff-main,
   $font-size: 0.675rem,
   $text-decoration: none,

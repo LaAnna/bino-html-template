@@ -56,11 +56,10 @@
     background: $active-color;
     display: flex;
     flex-direction: row;
-    //width: 45rem;
     flex: 0 0 50%;
     > * {
        flex: 0 0 50%;
-     }
+    }
     &:nth-child(3n),&:nth-child(4n) {
       flex-direction: row-reverse;
     }
@@ -92,8 +91,6 @@
 
   &__text {
     position: relative;
-    //width: 25%;
-    //height: 25%;
     margin: 0;
     padding: 3.3rem 2.34rem;
     box-sizing: border-box;
@@ -155,25 +152,31 @@
 }
 
 
-@media (min-width: 960px) and (max-width: 1919px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .blog {
     &__item {
+      flex: 0 0 100%;
       &:nth-child(even) {
         flex-direction: row-reverse;
         &:after {
           @include centerer-y();
           content: '';
-          right: 50%;
-          width: 0;
-          height: 0;
+          left: 50%;
           border-top: 33px solid transparent;
-          border-right: 24.75px solid $active-color;
+          border-left: 24.75px solid $active-color;
           border-bottom: 33px solid transparent;
-          border-left: 0;
         }
       }
       &:nth-child(odd) {
         flex-direction: row;
+        &:after {
+          @include centerer-y();
+          content: '';
+          right: 50%;
+          border-top: 33px solid transparent;
+          border-right: 24.75px solid $active-color;
+          border-bottom: 33px solid transparent;
+        }
       }
     }
 
@@ -183,8 +186,6 @@
           @include centerer-y();
           content: '';
           right: 1.55rem;
-          width: 0;
-          height: 0;
           border-top: 33px solid transparent;
           border-left: 24.75px solid $active-color;
           border-bottom: 33px solid transparent;
@@ -195,30 +196,38 @@
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 768px) {
   .blog {
     &__item {
-      width: 22.5rem;
-      height: 45rem;
       flex-direction: column-reverse;
+      flex: 0 0 100%;
+      > * {
+        flex: 0 0 100%;
+      }
       &:nth-child(3n),&:nth-child(4n) {
         flex-direction: column-reverse;
+        //&:after {
+        //  @include centerer-x();
+        //  content: '';
+        //  bottom: 1.55rem;
+        //  border-bottom: 33px solid transparent;
+        //  border-right: 33px solid transparent;
+        //  border-top: 24.75px solid $active-color;
+        //  top: 100%;
+        //}
       }
     }
 
-    &__text {
-      &:after {
-        @include centerer-x();
-        content: '';
-        bottom: 1.55rem;
-        width: 0;
-        height: 0;
-        border-left: 33px solid transparent;
-        border-right: 33px solid transparent;
-        border-top: 24.75px solid $active-color;
-        border-right: 0;
-        border-left: 0;
-      }
-    }
+    //&__text {
+    //  &:after {
+    //    @include centerer-x();
+    //    content: '';
+    //    bottom: 1.55rem;
+    //    border-left: 33px solid transparent;
+    //    border-right: 33px solid transparent;
+    //    border-top: 24.75px solid $active-color;
+    //    top: 100%;
+    //  }
+    //}
   }
 }

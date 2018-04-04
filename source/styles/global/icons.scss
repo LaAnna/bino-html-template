@@ -120,3 +120,119 @@
   background: url(../images/icons/ico-ribbons-white.svg) 23.94rem 31.94rem no-repeat;
   background-position: center;
 }
+
+
+
+.icon-facebook {
+  content: '';
+  @include centerer-xy();
+  height: 0.94rem;
+  width: 0.47rem;
+  background: url(../images/icons/ico-facebook.svg) 2.43rem 4.5rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-facebook-active.svg) 2.43rem 4.5rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-twitter {
+  content: '';
+  @include centerer-xy();
+  height: 0.8rem;
+  width: 0.89rem;
+  background: url(../images/icons/ico-twitter.svg) 0.93rem 0.76rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-twitter-active.svg) 0.93rem 0.76rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-rss {
+  content: '';
+  @include centerer-xy();
+  height: 0.94rem;
+  width: 0.94rem;
+  background: url(../images/icons/ico-rss.svg) 0.93rem 0.94rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-rss-active.svg) 0.93rem 0.94rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.icon-google {
+  content: '';
+  @include centerer-xy();
+  height: 0.84rem;
+  width: 0.94rem;
+  background: url(../images/icons/ico-googleplus.svg) 0.94rem 0.82rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-googleplus-active.svg) 0.94rem 0.82rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-linkedin {
+  content: '';
+  @include centerer-xy();
+  height: 0.89rem;
+  width: 0.98rem;
+  background: url(../images/icons/ico-linkedin.svg) 0.93rem 0.87rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-linkedin-active.svg) 0.93rem 0.87rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-skype {
+  content: '';
+  @include centerer-xy();
+  height: 0.94rem;
+  width: 0.94rem;
+  background: url(../images/icons/ico-skype.svg) 0.93rem 0.94rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-skype-active.svg) 0.93rem 0.94rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-vimeo{
+  content: '';
+  @include centerer-xy();
+  height: 0.8rem;
+  width: 0.94rem;
+  background: url(../images/icons/ico-vimeo.svg) 0.93rem 0.82rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-vimeo-active.svg) 0.93rem 0.82rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.icon-tumblr {
+  content: '';
+  @include centerer-xy();
+  height: 0.94rem;
+  width: 0.56rem;
+  background: url(../images/icons/ico-tumblr.svg) 0.54rem 0.94rem no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    background: url(../images/icons/ico-tumblr-active.svg) 0.54rem 0.94rem no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

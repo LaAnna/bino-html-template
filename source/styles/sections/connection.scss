@@ -1,0 +1,146 @@
+.connection {
+  min-height: 48.5rem;
+  background-color: $light-background;
+
+  &__title {
+    padding-top: 6.8rem;
+  }
+
+  &__about {
+    display: block;
+    width: 80%;
+    margin: 0.75rem auto;
+    font-family: $ff-main;
+    font-size: 0.675rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: $light-fonts-and-background;
+  }
+
+  &__line-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 2.8rem 0;
+    align-items: center;
+    align-content: center;
+
+    &__bottom-line {
+      display: inline-block;
+      text-align: center;
+      &:after {
+        background: $main-fonts-color;
+      }
+      &:before {
+        background: $main-fonts-color;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 0 2.8rem 0;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__list-contact {
+    background-color: $against-a-dark-background;
+    flex-basis: 35%;
+    padding: 3.5rem 2rem 3.5rem 4rem;
+    margin-right: 1%;
+    margin-left: 4%;
+    box-sizing: border-box;
+    min-height: 27rem;
+    box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+  }
+
+  &__item {
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $ff-additional;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: lighter;
+      color: $active-color;
+    }
+    &__about {
+      margin: 1.2rem 0;
+      font-family: $ff-main;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      font-weight: lighter;
+      font-size: 0.84rem;
+      color: $light-fonts-and-background;
+    }
+  }
+
+  &__contact-form {
+    background-color: $against-a-dark-background;
+    flex-basis: 55%;
+    margin-left: 1%;
+    margin-right: 4%;
+    box-sizing: border-box;
+    min-height: 27rem;
+    padding: 3rem 5rem;
+    box-shadow: -1px -1px 10px 1px $transparent-shadow;
+  }
+  &__form-group {
+    width: 100%;
+    &__form-text {
+      font-family: $ff-main;
+      font-weight: lighter;
+      font-size: 0.66rem;
+      color: $light-fonts-and-background;
+    }
+    &__form-control {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $light-fonts-and-background;
+      margin-top: 1.4rem;
+      font-family: $ff-main;
+      font-weight: lighter;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      line-height: 3;
+      color: $light-fonts-and-background;
+      resize:none;
+    }
+    &__button {
+      @include button-against-a-white-background;
+      margin-top: 1.4rem;
+      padding: 0.5rem 1.4rem;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .connection {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+    &__list-contact {
+      width: 90%;
+      margin: 1.5% 3%;
+      text-align: center;
+      padding: 3.5rem;
+      min-height: 1rem;
+    }
+    &__contact-form {
+      width: 90%;
+      margin: 1.5% 3%;
+    }
+    &__form-group {
+      &__button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+section.connection
+    .container
+        h2.connection__title.title Keep in touch
+        p.connection__about Nullam semper, eros et rutrum sagittis, orci justo fringilla nulla, quis maximus nibh neque eget diam.
+
+        .connection__line-wrapper
+            .bottom-line.connection__line-wrapper__bottom-line
+
+        .connection__wrapper
+
+            ul.connection__list-contact
+                li.connection__item
+                    h2.connection__item__title Our address
+                    p.connection__item__about House #13, Street road, Sydney 2310 Australia
+                li.connection__item
+                    h2.connection__item__title Call us
+                    p.connection__item__about +880 168 109 1425
+                    p.connection__item__about +0216809142
+                li.connection__item
+                    h2.connection__item__title Email us
+                    p.connection__item__about contactus@email.com
+
+            form.connection__contact-form(action='#')
+                .connection__form-group
+                    label.connection__form-group__form-text.second(for='name') Name
+                    input#name.connection__form-group__form-control(type='text' name='name' placeholder='Name')
+                .connection__form-group
+                    label.connection__form-group__form-text.second(for='email') Email
+                    input#email.connection__form-group__form-control(type='email' name='email' placeholder='Email')
+                .connection__form-group
+                    label.connection__form-group__form-text.second(for='subject') Subject
+                    input#subject.connection__form-group__form-control(type='text' name='subject' placeholder='Subject')
+                .connection__form-group
+                    label.connection__form-group__form-text.second(for='message') Message
+                    textarea#message.connection__form-group__form-control(name='message' rows='2' placeholder='Message')
+                button.connection__form-group__button(type='submit') Send message
+
+
+

@@ -8,8 +8,9 @@ $dark-grey: #202020;
 $grey: #6a6a6a;
 $light-grey: #999999;
 $light-light-grey: #f4f5f9;
-$transparent-grey: rgba(153, 153, 153, 0.5);
+$transparent-grey: rgba(0, 0, 0, 0.25);
 $red: #e74c3c;
+$transparent-red: rgba(231, 76, 60, 0.6);
 
 $against-a-dark-background: $white;
 $dark-background: $dark-grey;
@@ -18,6 +19,7 @@ $light-fonts-and-background: $light-grey;
 $light-background: $light-light-grey;
 $transparent-shadow: $transparent-grey;
 $active-color: $red;
+$active-transparent: $transparent-red;
 
 // Breadcrumbs
 $breadcrumb-padding-y:              .75rem !default;

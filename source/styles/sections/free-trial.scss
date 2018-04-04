@@ -1,0 +1,63 @@
+.free-trial {
+  position: relative;
+  width: 100%;
+  min-height: 22.5rem;
+  color: $against-a-dark-background;
+  background-color: $main-fonts-color;
+  background-image: url("../images/background_free-trial.jpg");
+  background-size: cover, 1920px 480px;
+  padding: 0;
+
+  font-family: $ff-main;
+  text-align: center;
+
+  .container {
+    min-height: 22.5rem;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  &__slogan {
+    margin: 0;
+    padding-top: 7rem;
+    font-family: $ff-additional;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  &__about {
+    margin: 0;
+    padding-top: 0.3rem;
+    font-family: $ff-main;
+    font-size: 0.675rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__button {
+    @include button-against-a-white-background;
+    margin-top: 3.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .free-trial {
+    .container {
+      width: 90%;
+    }
+    &__button {
+      width: 60%;
+      padding: 0.5rem 1.4rem;
+    }
+  }
+}
