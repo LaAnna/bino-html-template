@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: stretch;
     align-content: center;
   }
 
@@ -198,6 +198,9 @@
 
 @media (max-width: 768px) {
   .blog {
+    &__list {
+      align-items: center;
+    }
     &__item {
       flex-direction: column-reverse;
       flex: 0 0 100%;
