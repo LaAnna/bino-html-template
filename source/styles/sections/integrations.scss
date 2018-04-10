@@ -14,7 +14,7 @@
     font-size: 0.675rem;
     letter-spacing: 0.1em;
     text-align: center;
-    margin-bottom: 1.4px;
+    margin-bottom: 1.4rem;
     color: $light-fonts-and-background;
   }
 
@@ -48,27 +48,57 @@
     align-items: center;
     align-content: center;
   }
-
   &__item {
-    flex-basis: 9.84rem;
-    min-height: 4.69rem;
     margin: 0.7rem;
-    &:before {
-      background-color: $against-a-dark-background;
-      width: 100%;
-      height: 100%;
+    padding: 0;
+    background-color: $against-a-dark-background;
+    width: 9.8rem;
+    height: 4.7rem;
+    &:hover {
+      background-color: $active-color;
     }
+  }
+  &__image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
-.osha {
-  background: url("../images/integrations/osha-grey.png") 210px 100px no-repeat;
-  background-position: center;
-  width: 100%;
+.log-1 {
+  @include integrations-logo (
+          $background-url: 'log-1.svg',
+          $background-hover-url: 'log-1-white.svg'
+  );
 }
 
-.nyc {
-  background: url("../images/integrations/nyc-grey.png") 210px 100px no-repeat;
-  background-position: center;
-  width: 100%;
+.log-2 {
+  @include integrations-logo (
+          $background-url: 'log-2.svg',
+          $background-hover-url: 'log-2-white.svg'
+  );
+}
+
+.log-3 {
+  @include integrations-logo (
+          $background-url: 'log-3.svg',
+          $background-hover-url: 'log-3-white.svg'
+  );
+}
+
+.log-4 {
+  @include integrations-logo (
+          $background-url: 'log-4.svg',
+          $background-hover-url: 'log-4-white.svg'
+  );
+}
+
+.log-5 {
+  @include integrations-logo (
+          $background-url: 'log-5.svg',
+          $background-hover-url: 'log-5-white.svg'
+  );
 }

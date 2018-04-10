@@ -9,6 +9,7 @@ $grey: #6a6a6a;
 $light-grey: #999999;
 $light-light-grey: #f4f5f9;
 $transparent-grey: rgba(0, 0, 0, 0.25);
+$transparent-black: rgba(0, 0, 0, 1);
 $red: #e74c3c;
 $transparent-red: rgba(231, 76, 60, 0.6);
 
@@ -18,6 +19,7 @@ $main-fonts-color: $grey;
 $light-fonts-and-background: $light-grey;
 $light-background: $light-light-grey;
 $transparent-shadow: $transparent-grey;
+$transparent-shadow-black: $transparent-black;
 $active-color: $red;
 $active-transparent: $transparent-red;
 
@@ -32,5 +34,9 @@ $breadcrumb-divider-color:          $light-fonts-and-background !default;
 $breadcrumb-active-color:           $active-color !default;
 $breadcrumb-divider:                "/" !default;
 
-
-
+// Team
+$team-circle-width: 40.5px;
+$team-circle-height: 40.5px;
+$team-circle-border-width: 0.14rem;
+$team-circle-width-hover: 64.5px;
+$team-circle-height-hover: 64.5px;

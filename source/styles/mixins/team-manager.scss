@@ -1,0 +1,59 @@
+@mixin team-manager(
+  $width: $team-circle-width,
+  $height: $team-circle-height,
+  $border-width: $team-circle-border-width,
+  $background-url: '',
+  $background-position: center,
+  $background-size: auto,
+  $top: ''
+) {
+  @include centerer-x();
+  content: '';
+  width: $width;
+  height: $height;
+  background-color: transparent;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-width: $border-width;
+  border-style: solid;
+  border-color: $active-color;
+  background: url("../images/#{$background-url}") no-repeat;
+  background-position: $background-position;
+  background-size: $background-size;
+  top: $top;
+}
+
+@mixin team-item-position (
+  $width: 8rem,
+  $height: 10rem,
+  $left: '',
+  $top: ''
+){
+  position: absolute;
+  content: '';
+  width: $width;
+  min-height: $height;
+  left: $left;
+  top: $top;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+@mixin hover-position (
+  $element: '',
+  $transform-xy: '0, 18%',
+  $transform-scale: '1.5, 1.5',
+  $box-shadow: -1px 1px 20px 1px $transparent-shadow-black
+){
+  transform: translate(#{$transform-xy}) scale(#{$transform-scale});
+  .#{$element}__avatar {
+    box-shadow: $box-shadow;
+  }
+  .line {
+    opacity: 1;
+  }
+  .team__employee {
+    opacity: 1;
+  }
+}

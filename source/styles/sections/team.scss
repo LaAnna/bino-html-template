@@ -4,7 +4,7 @@
   color: $against-a-dark-background;
   background-color: $main-fonts-color;
   background-image: url("../images/background_team.jpg");
-  background-size: cover,1440px 558px;
+  background-size: cover, 1440px 558px;
 
   font-family: $ff-main;
   text-align: center;
@@ -15,7 +15,7 @@
     content: '';
     width: 1440px;
     height: 382.9px;
-    background: url("../images/line.svg") 1922px 511px no-repeat;
+    background: url("../images/line.svg") no-repeat;
     background-position: center;
     background-size: contain;
   }
@@ -25,12 +25,10 @@
     content: '';
     width: 1440px;
     height: 486.267px;
-    background: url("../images/shape.svg") 1440px 486.267px no-repeat;
+    background: url("../images/shape.svg") no-repeat;
     background-position: center;
     background-size: contain;
   }
-
-
 
   &__title {
     padding-top: 6.3rem;
@@ -53,81 +51,170 @@
     margin: 0 auto;
   }
 
-  &__wrapper {
+  &__list {
     padding-bottom: 22.5rem;
     position: relative;
   }
 
-  &__employee {
-    position: absolute;
-    width: 40.5px;
-    height: 40.5px;
-    background-color: transparent;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 0.14rem solid $active-color;
-
-    &__header {
-      position: absolute;
-      content: '';
-      left: -120%;
-      color: $active-color;
-      font-size: 1.125rem;
-      font-weight: normal;
-      padding-top: 7rem;
-      margin: 0;
-      min-width: 8.9rem;
-      text-align: center;
+  &__item-one {
+    @include team-item-position (
+            $left: 0,
+            $top: 36%
+    );
+    &:hover {
+      @include hover-position ($element: 'manager-one');
     }
+  }
+  &__item-two {
+    @include team-item-position (
+            $left: 22.7%,
+            $top: 25.3%
+    );
+    &:hover {
+      @include hover-position ($element: 'manager-two');
+    }
+  }
+  &__item-three {
+    @include team-item-position (
+            $left: 50%,
+            $top: 25.3%
+    );
+    transform: translateX(-50%);
+    &:hover {
+      @include hover-position (
+              $element: 'manager-three',
+              $transform-xy: '-50%, 18%'
+      );
+    }
+  }
+  &__item-four {
+    @include team-item-position (
+            $left: 65%,
+            $top: 33%
+    );
+    &:hover {
+      @include hover-position ($element: 'manager-four');
+    }
+  }
+  &__item-five {
+    @include team-item-position (
+            $left: auto,
+            $top: 23%
+    );
+    right: 0;
+    &:hover {
+      @include hover-position ($element: 'manager-five');
+    }
+  }
 
-    &__about {
-      position: absolute;
-      content: '';
-      left: -120%;
-      min-width: 8.9rem;
+  &__employee {
+    text-align: center;
+    padding: 0;
+    margin: 65% 0 0 0;
+    opacity: 0;
+    &__header {
+      color: $active-color;
+      font-size: 0.8rem;
+      font-weight: normal;
+      padding: 0;
       margin: 0;
-      padding-top: 9rem;
+      margin-top: 1rem;
+    }
+    &__about {
       font-family: $ff-main;
-      font-size: 0.675rem;
+      font-size: 0.4rem;
       letter-spacing: 0.1em;
-      text-align: center;
       color: $against-a-dark-background;
+      padding: 0;
+      margin: 0;
     }
   }
 }
 
-.manager-one {
-  background: url("../images/foto_1.png") 42.75px 42px no-repeat;
-  background-position: center;
-  left: 4%;
-  top: 38%;
+.line {
+  @include centerer-x();
+  content: '';
+  top: 10%;
+  width: 1px;
+  height: 55px;
+  background-color: $against-a-dark-background;
+  opacity: 0;
 }
 
-.manager-two {
-  background: url("../images/foto_2.png") 66px 64.5px no-repeat;
-  background-position: center;
-  left: 27%;
-  top: 27%;
+.manager-one__avatar {
+  @include team-manager (
+          $background-url: 'foto_1.png'
+  );
 }
 
-.manager-three {
-  background: url("../images/foto_3.png") 42.75px 42px no-repeat;
-  background-position: center;
-  left: 48%;
-  top: 27%;
+.manager-two__avatar {
+  @include team-manager (
+          $background-url: 'foto_2.png'
+  );
 }
 
-.manager-four {
-  background: url("../images/foto_4.png") 42.75px 42px no-repeat;
-  background-position: center;
-  left: 69%;
-  top: 35%;
+.manager-three__avatar {
+  @include team-manager (
+          $background-url: 'foto_3.png'
+  );
 }
 
-.manager-five {
-  background: url("../images/foto_5.png") 42.75px 42px no-repeat;
-  background-position: center;
-  top: 25%;
-  right: 4%;
+.manager-four__avatar {
+  @include team-manager (
+          $background-url: 'foto_4.png'
+  );
+}
+
+.manager-five__avatar {
+  @include team-manager (
+          $background-url: 'foto_5.png'
+  );
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .team {
+    &__curve {
+      opacity: 0;
+    }
+    &__shape {
+      opacity: 0;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 7rem 0 1rem;
+      align-items: center;
+      align-content: center;
+    }
+    &__item-one, &__item-two, &__item-three, &__item-four, &__item-five {
+      position: relative;
+      margin: 0;
+      flex: 0 0 25%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    &__curve {
+      opacity: 0;
+    }
+    &__shape {
+      opacity: 0;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      align-content: center;
+    }
+    &__item {
+      flex: 0 0 100%;
+    }
+  }
 }
