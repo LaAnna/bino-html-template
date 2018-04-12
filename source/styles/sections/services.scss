@@ -92,7 +92,40 @@
 }
 
 
-
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .services {
+    &__picture {
+      @include visuallyhidden;
+    }
+    &__wrapper {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    &__wrapper-title {
+      padding: 0 15rem;
+    }
+    &__title {
+      text-align: center;
+      padding-right: 0;
+      margin: 6.56rem 0 2.34rem 0;
+    }
+    &__icon {
+      position: unset;
+      margin: 1rem auto;
+      transform: none;
+    }
+    &__wrapper-item {
+      padding-right: 0;
+    }
+    &__header {
+      text-align: center;
+    }
+    &__about {
+      text-align: center;
+    }
+  }
+}
 
 
 // Small devices (landscape phones, 576px and up)
@@ -108,7 +141,7 @@
     }
 
     &__wrapper-title {
-      padding-right: 0;
+      padding: 0;
     }
 
     &__list {
@@ -141,40 +174,6 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-  .services {
-    &__picture {
-      @include visuallyhidden;
-    }
-
-    &__title {
-      text-align: center;
-    }
-
-    &__item {
-
-    }
-
-    &__wrapper-item {
-
-    }
-
-    &__header {
-      text-align: center;
-    }
-
-    &__about {
-      text-align: center;
-    }
-
-    //Circle with icon
-    //&__icon {
-    //  position: relative;
-    //  text-align: center;
-    //}
-  }
-}
 
 
 
