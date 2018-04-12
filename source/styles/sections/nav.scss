@@ -34,7 +34,7 @@
   position: relative;
 }
 .nav__link--active::after {
-  content: " ";
+  content: '';
   position: absolute;
 
   /*привязка к родителю:*/

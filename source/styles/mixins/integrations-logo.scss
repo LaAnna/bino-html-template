@@ -6,7 +6,6 @@
   $background-position: center,
   $background-size: contain
 ){
-  content: '';
   @include centerer-xy();
   width: $width;
   height: $height;

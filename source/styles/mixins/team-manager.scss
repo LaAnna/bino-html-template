@@ -8,7 +8,6 @@
   $top: ''
 ) {
   @include centerer-x();
-  content: '';
   width: $width;
   height: $height;
   background-color: transparent;
@@ -31,7 +30,6 @@
   $top: ''
 ){
   position: absolute;
-  content: '';
   width: $width;
   min-height: $height;
   left: $left;

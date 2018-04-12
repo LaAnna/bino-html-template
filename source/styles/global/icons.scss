@@ -22,7 +22,6 @@
 }
 
 .icon-design {
-  content: '';
   @include centerer-xy();
   height: 1.4rem;
   width: 2.8rem;
@@ -32,7 +31,6 @@
 }
 
 .icon-code {
-  content: '';
   @include centerer-xy();
   height: 0.89rem;
   width: 2.8rem;
@@ -52,7 +50,6 @@
 }
 
 .icon-support {
-  content: '';
   @include centerer-xy();
   height: 1.03rem;
   width: 2.8rem;
@@ -72,7 +69,6 @@
 }
 
 .icon-heart {
-  content: '';
   @include centerer-xy();
   height: 1.22rem;
   width: 2.8rem;
@@ -92,7 +88,6 @@
 }
 
 .icon-like {
-  content: '';
   @include centerer-xy();
   height: 1.5rem;
   width: 2.8rem;
@@ -112,7 +107,6 @@
 }
 
 .icon-ribbons {
-  content: '';
   @include centerer-xy();
   height: 1.31rem;
   width: 2.8rem;
@@ -138,7 +132,6 @@
   }
 }
 .icon-twitter {
-  content: '';
   @include centerer-xy();
   height: 0.8rem;
   width: 0.89rem;
@@ -167,7 +160,6 @@
 }
 
 .icon-google {
-  content: '';
   @include centerer-xy();
   height: 0.84rem;
   width: 0.94rem;
@@ -195,7 +187,6 @@
   }
 }
 .icon-skype {
-  content: '';
   @include centerer-xy();
   height: 0.94rem;
   width: 0.94rem;
@@ -223,7 +214,6 @@
   }
 }
 .icon-tumblr {
-  content: '';
   @include centerer-xy();
   height: 0.94rem;
   width: 0.56rem;
