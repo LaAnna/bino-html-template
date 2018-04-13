@@ -7,14 +7,11 @@
   }
 
   &__about {
-    display: block;
-    width: 80%;
-    margin: 0.75rem auto;
+    margin: 1.5rem 1rem;
     font-family: $ff-main;
     font-size: 0.675rem;
     letter-spacing: 0.1em;
     text-align: center;
-    margin-bottom: 1rem;
     color: $light-fonts-and-background;
   }
 
@@ -77,6 +74,25 @@
 
   &__button {
     @include button-against-a-white-background();
+    margin: 1rem 0;
   }
 }
 
+// Small devices (landscape phones)
+@media (max-width: 768px) {
+  .study {
+    min-height: 50rem;
+    &__img {
+      @include visuallyhidden;
+      width: 0;
+    }
+    &__wrapper {
+      @include centerer-x();
+      width: 90%;
+    }
+    &__button {
+      width: 50%;
+      margin-bottom: 3rem;
+    }
+  }
+}

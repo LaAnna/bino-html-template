@@ -40,31 +40,31 @@
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+// Medium devices (tablets), Small devices (landscape phones)
+@media (min-width: 769px) and (max-width: 1024px), (max-width: 768px) {
   .history {
     &__wrapper {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      padding: 5.625rem 0 2.34rem 0;
+      padding: 0 0 6rem 0;
     }
-
     &__picture {
-      padding-right: 0;
+      padding: 0;
+      margin: 0 auto;
     }
-
     &__text-wrapper {
-      padding: 2.34rem 0.7rem 0.7rem 0.7rem;
+      padding: 2.34rem 0.7rem 0 0.7rem;
       flex-basis: 100%;
       text-align: center;
     }
-
     &__title {
+      display: block;
+      width: 13rem;
       text-align: center;
       padding-left: 0;
+      margin: 0 auto;
+    }
+    &__button {
+      width: 50%;
     }
   }
 }
+

@@ -154,3 +154,16 @@
     margin-bottom: 2.3rem;
   }
 }
+
+// Small devices (landscape phones)
+@media (max-width: 768px) {
+  .pricing {
+    &__item {
+      flex-basis: 90%;
+      margin: 1rem;
+    }
+    &__button {
+      width: 50%;
+    }
+  }
+}
