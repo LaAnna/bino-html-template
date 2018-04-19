@@ -3,13 +3,13 @@
   background-color: $dark-grey;
   min-height: 4.2rem;
   &__up {
-    position: absolute;
+    position: fixed;
     width: 2.6rem;
     height: 2.6rem;
     -moz-border-radius: 1.3rem;
     -webkit-border-radius: 1.3rem;
     border-radius: 1.3rem;
-    top: -1.3rem;
+    bottom: 2.9rem;
     right: 5%;
     background: $active-color;
     &:after {
@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
   .footer {
     &__up {
-      @include centerer-x();
+      display: none;
     }
     &__wrapper {
       flex-direction: column;

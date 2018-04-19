@@ -1,7 +1,7 @@
 nav.nav
-    - var items = ['Home', 'About us', 'Portfolio', 'Pricing', 'Team', 'Blog', 'Contact']
-    each item in items
-        if item === 'Home'
-            a.nav__link.nav__link--active(href="#")=item
+    - var items = {home:'Home', about_us:'About us', portfolio:'Portfolio', pricing:'Pricing', team:'Team', blog:'Blog', contact:'Contact'}
+    each val, index in items
+        if val === 'Home'
+            a.nav__link(href="#" + index)=val
         else
-            a.nav__link(href="#")=item
+            a.nav__link(href="#" + index)=val

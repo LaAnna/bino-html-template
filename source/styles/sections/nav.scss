@@ -1,66 +1,52 @@
 .nav {
-
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
   &__link {
     display: table-cell;
+    margin: 0;
+    padding: .7rem 0;
     vertical-align: top;
     font-family: $ff-main;
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    padding: 0 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     color: $against-a-dark-background;
   }
-  &__link:first-child {
-    padding-left: 0;
-  }
-  &__link:last-child {
-    padding-right: 0;
-  }
-
   &__link:hover {
-    color: darken($against-a-dark-background, 30%);
+    color: $active-color;
+    border-bottom: 1px solid $active-color;
   }
   &__link:active {
     color: $active-color;
   }
-  &__link--active {
-    color: $active-color;
-  }
 }
 
-//Подчеркивание активной ссылки
-.nav__link--active {
-  position: relative;
-}
-.nav__link--active::after {
-  content: '';
-  position: absolute;
-
-  /*привязка к родителю:*/
-  right: 1.3125rem;
-  bottom: -0.9375rem;
-  left: 0px;
-
-  height: 1px;
-  background-color: $active-color;
-}
 
 // Small devices (landscape phones)
 @media (max-width: 768px) {
   .nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: stretch;
-    flex-direction: column;
+    display: none;
     &__link {
       padding: 0;
-      margin: 0;
+      margin: .5rem auto;
     }
     &__link--active::after {
       display: none;
+    }
+    &.open {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: stretch;
+      flex-direction: column;
+      flex-basis: 100%;
+      margin-top: 1rem;
     }
   }
 }
