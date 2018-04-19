@@ -1,5 +1,7 @@
 # Bino HTML template
 
+[DEMO][demo]
+
 ## Перед стартом проекта необходимо:
 
 * Убедиться что установлены node.js и npm. для этого достаточно написать в терминале
@@ -38,4 +40,5 @@
     ```
     npm start
     ```    
-        
+    
+[demo]: https://laanna.github.io/bino-html-template/
