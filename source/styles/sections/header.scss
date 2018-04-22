@@ -2,12 +2,7 @@
   position: relative;
   background-image: url("../images/background_header.jpg");
   background-size: cover,1920px 1041px;
-  &::after {
-    content: '';
-    position: absolute;
-    background-image: url("../images/background_figure.svg");
-    background-size: auto,1920px 1041px;
-  }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88% );
   &__background {
     background: rgba(0,0,0,0.7);
     width: 100%;
