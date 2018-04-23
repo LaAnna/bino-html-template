@@ -1,4 +1,8 @@
-# Bino HTML template
+<p align="center">
+  <img src="/bino_screenshot.png" width="800" alt="bino">
+</p>
+<h1 align="center">Bino HTML template</h1>
+<br>
 
 [DEMO][demo]
 
