@@ -54,6 +54,8 @@
     left: 100%;
     transform: translate(-50%, -50%);
     top: 50%;
+    border-radius: 50%;
+    background: $transparent-shadow-white;
   }
 
   &__wrapper-item {

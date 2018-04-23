@@ -25,6 +25,18 @@
   &__toggle {
     display: none;
   }
+  &__icon {
+    position: absolute;
+    width: 3.3rem;
+    height: 3.3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $transparent-shadow-white;
+  }
+  &__icon-anchor {
+    @include circle-icon(ico-anchor, 1rem, 1.45rem);
+  }
 }
 
 // Small devices (landscape phones)

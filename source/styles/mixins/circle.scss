@@ -1,13 +1,15 @@
 @mixin circle(
   $size: 2.8rem,
-  $bg: $against-a-dark-background
+  $bg: $light-background
 ) {
   height: $size;
   width: $size;
   border-radius: 50%;
   background: $bg;
-  border: 0.23rem solid $transparent-shadow;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 0.25rem;
+  transform: translateX(-50%);
 }
 
 @mixin circle-icon(
@@ -31,5 +33,4 @@
     background-size: cover;
   }
 }
-
 
