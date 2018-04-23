@@ -38,6 +38,10 @@
     margin-top: 2rem;
     padding: 0.7rem 1.9rem;
   }
+  .picture__screen {
+    width: 379.5px;
+    height: 305.25px;
+  }
 }
 
 // Medium devices (tablets), Small devices (landscape phones)
@@ -68,3 +72,14 @@
   }
 }
 
+@media (max-width: 400px) {
+  .history {
+    .picture__screen {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
