@@ -1,6 +1,6 @@
 {
   "name": "bino-html-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Bino HTML template",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaAnna/bino-html-template.git"
+    "url": "git+https://github.com/laanna/bino-html-template.git"
   },
   "author": "Anna Lahtacheva",
   "license": "ISC",

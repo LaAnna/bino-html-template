@@ -30,7 +30,7 @@
 * Склонировать данный репозиторий
 
     ```
-    git clone https://github.com/LaAnna/bino-html-template.git
+    git clone https://github.com/laanna/bino-html-template.git
     ```
 
 * Запустить команду npm install в терминале. Данная команда установит все пакеты, которые указаны 
